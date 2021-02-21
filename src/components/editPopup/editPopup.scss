@@ -1,0 +1,175 @@
+.editPopcontainer{
+    .editContainer{
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 98%;
+        overflow: auto;
+        .desBlock{
+            min-width: 314px;
+            width: 75%;
+            padding: 10px;
+            .desTitle{
+                margin-bottom: 10px;
+                .addDesc{
+                    margin-left: 21px;
+                    background: #15151524;
+                    height: auto;
+                    border-radius: 3px;
+                    padding: 8px;
+                    font-size: 14px;
+                    margin-top: 8px;
+                    cursor: pointer;
+                    min-height: 40px;
+                    .txtAr{
+                        width: 90%;
+                        resize: none;
+                        outline: none;
+                        border: 2px solid #60adf5;
+                        border-radius: 3px;
+                        height: 90px;
+                        padding: 5px;
+                    }
+                    .svBtn{
+                        width: 65px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 4px;
+                        background: #65aef2;
+                        outline: none;
+                        color: white;
+                        font-size: 13px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+                }
+                .sta{
+                    font-size: 15px;
+                    padding-left: 21px;
+                    padding-top: 10px;
+                    cursor: pointer;
+                }
+            }
+        
+        }
+        .actionBlock{
+            width: 20%;
+            padding: 10px;  
+        }
+    }
+    .ediTitl{
+        font-size: 20px;
+        color: #4e4e4e;
+        width: 100%;
+        overflow-wrap: break-word;
+        .pad10{
+            padding-left: 10px;
+            padding-right: 10px;
+            display: inline;
+        }
+        .inpt{
+        border: 2px solid #15a215;
+        width: 94%;
+        border-radius: 3px;
+        height: 25px;
+        font-size: 18px;
+        padding: 4px;
+        box-sizing: border-box;
+        outline: none;
+        width: 85%;
+        }
+      
+    }
+    .desLabel{
+        .marg5{
+            margin-right: 5px;
+        }
+        font-size: 16px;
+        font-weight: 500;
+
+    }
+    .dummyCmnt{
+    border: 1px solid #c3c3c3;
+    font-size: 14px;
+    margin-left: 21px;
+    margin-top: 8px;
+    background: white;
+    border-radius: 3px;
+    padding: 5px;
+    min-height: 30px;
+    box-shadow: 0px 1px 1px 1px #b3b3b330;
+    cursor: pointer;
+    height: auto;
+    .txt{
+        outline: none;
+        border: none;
+        resize: none;
+        min-height:45px;
+        width: 100%;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        box-sizing: content-box;
+    }
+    .savbtn{
+        border-radius: 2px;
+        border: none;
+        padding: 5px;
+        background: #54a7f5;
+        margin-right: 25px;
+        cursor: pointer;
+        font-size: 15px;
+        &:disabled{
+            background: #d0d0d0;
+            cursor: not-allowed;
+        }
+    }
+    }
+    .nme{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .dt{
+        font-size: 12px;
+    }
+    .cmntsContainer{
+        margin: 4px 0px;
+        margin-left: 21px;
+    }
+    .cmnt{
+        margin-top: 5px;
+        background: white;
+        width: fit-content;
+        border-radius: 3px;
+        padding: 6px;
+        box-shadow: 0px 0px 2px 1px #6161617d;
+        cursor: pointer;
+    }
+    .editCmntContain{
+        font-size: 12px;
+    margin-top: 8px;
+    .item{
+        text-decoration: underline;
+        cursor: pointer;
+        margin-right: 3px;
+    }
+    }
+    .actTitle{
+        color: #0000008c;
+    font-weight: 500;
+    font-size: 15px;
+    }
+    .actItem{
+        background: #b9b9b9;
+        padding: 6px;
+        color: black;
+        border-radius: 3px;
+        margin-top: 5px;
+        cursor: pointer;
+        &:hover{
+            color: #54a7f5;
+            text-decoration: underline;
+        }
+    }
+    .mag0{
+        margin-left: 0px;
+    }
+}

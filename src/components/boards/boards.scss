@@ -1,0 +1,38 @@
+.boardTitle{
+    font-weight: 500;
+    color: #615f5f;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    .marg{
+        margin-right: 5px;
+    }
+}
+
+.boardcontainer{
+        display: flex;
+flex-wrap: wrap;
+min-width: 200px;
+max-width: 90rem;
+
+.bNewcard{
+    background: #d4d4d4;
+    height: 80px;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    width: 41%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover{
+        .btmStar{
+            display: block;
+        }
+    }
+}
+}

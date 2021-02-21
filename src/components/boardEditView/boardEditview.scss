@@ -1,0 +1,260 @@
+.editvieeContainer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+    .subHeader{
+        background-color: #ffffff38;
+        padding: 7px;
+        color: white;
+        line-height: 20px;
+        position: relative;
+        height: 44px;
+        box-sizing: border-box;
+        .headTitle{
+            font-size: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            text-align: center;
+            padding: 2px 4px 2px 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 600px;
+            cursor: pointer;
+            display: inline-block;
+            height: 22px;
+            &:hover{
+                background: #00000029;
+                border-radius: 5px;
+            }
+        }
+
+        .divider{
+            position: absolute;
+            left: 98%;
+            top: 10%;
+            bottom: 10%;
+            border-left: 1px solid white;
+        }
+      
+        .starContainer{
+            display: inline-block;
+            position: relative;
+            width: 38px;
+            vertical-align: super;
+            .star{
+                padding: 5px;
+                background: #ffffff2e;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background:#ffffff4d
+                }
+            }
+        }
+        .secName{
+            margin-left: 10px;
+            vertical-align: super;
+        }
+      
+    }
+    .editable{
+        height: 20px;
+        border: none;
+        border-radius: 3px;
+        background: #ffffffc9;
+        color: black;
+        padding: 4px;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 16px;
+        vertical-align: super;
+        &:hover,&:focus{
+            background: #1b1b1b70;
+            color: white;
+        }
+    }
+    .cardsConatainer{
+        width: 99%;
+        height: 95%;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        overflow-wrap: break-word;
+        overflow-y: hidden;
+        .srlContainer{
+            max-height: 37rem;
+            overflow-y: auto;
+            padding-right: 4px;
+            min-height: 10px;
+        }
+        .card{
+            height: min-content;
+            background-color: #ececec;
+            border-radius: 4px;
+            min-width: 272px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 14px;
+            max-width: 272px;
+            box-sizing: border-box;
+            .addinpufield{
+            width: 96%;
+            height: 20px;
+            border: 2px #18b718 solid;
+            border-radius: 3px;
+            background: white;
+            padding: 3px;
+            }
+            .addBtn{
+                width: 80px;
+                margin-top: 14PX;
+                background: green;
+                border: 0px;
+                border-radius: 5px;
+                color: white;
+                padding: 8px;
+                cursor: pointer;
+            }
+            .marg10{
+                margin: 10px;
+                cursor: pointer;
+            }
+            .mrgTop{
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            .listTitle{
+                font-weight: 500;
+                margin-bottom: 2px;
+                display: inline-block;
+                width: 100%;
+            }
+            .listTextArea{
+                margin-top: 20px;
+                resize: none;
+                height: auto;
+                min-height: 50px;
+                width: 96%;
+                border-radius: 3px;
+                background: white;
+                padding: 3px;
+                border: none;
+                box-shadow: 0px 1px 2px #0000007a;
+            }
+            .listItemCArd{
+                background: white;
+                box-shadow: 0px 1px 2px #0000007a;
+                padding: 10px 5px 10px 5px;
+                border: none;
+                max-width: 96%;
+                border-radius: 3px;
+                margin-top: 3.7px;
+                margin-bottom: 3.7px;
+                position: relative;
+                .leftStar{ 
+                    position: absolute;
+                    padding: 2px;
+                    top: 35%;
+                    right: 10px;
+                    font-size: 13px;
+                    color:black;
+                    transition: 0.2s;
+                    &:hover{
+                        font-size: 15px;
+                        background: #0000000f;
+                        border-radius: 5px;
+                        padding: 4px;
+                        top: 25%;
+                    }
+                 }
+                 .labelContain{
+                    width: 88%;
+                    display: block;
+                    .mar10{
+                        margin: 4px;
+                    }
+                    .marg2{
+                        margin-right: 2px;
+                    }
+                 }
+                 .marTop{
+                     margin-top: 2px;
+                 }
+                &:hover{
+                    background: #ffffffa6;
+                    .leftStar{
+                        display: block;
+                    }  
+                }
+            }
+        }
+        .addCard{
+            background: #00000017;
+            color: white;
+            cursor: pointer;
+            .marg{
+                margin-right: 5px;
+            }
+            .poinT{
+                cursor: pointer;
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+.customScroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 6px;
+	background-color: #f5f5f51f;
+}
+
+.customScroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #d4d4d424;
+}
+
+.customScroll::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #ffffff47;
+}
+}
+li.placeholder {background: white;
+    box-shadow: 0px 1px 2px #0000007a;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    max-width: 96%;
+    border-radius: 3px;
+    margin-top: 3.7px;
+    margin-bottom: 3.7px;
+    list-style: none;
+    text-align: center;}
+li.placeholder:before {
+    content: "+";
+    color: #00000070;
+}
+@media screen and (max-width:400px){
+    .editvieeContainer{
+        .subHeader{
+            .headTitle{
+     max-width: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height:736px){
+    .editvieeContainer{
+        .cardsConatainer{
+            .srlContainer{
+                max-height: 23rem;
+            }
+        }   
+    }
+}

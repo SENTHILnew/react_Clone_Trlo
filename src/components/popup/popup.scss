@@ -1,0 +1,95 @@
+
+    .modelCus{
+        position: absolute; 
+        top: 18vh;
+        left: 24vw;
+        width: 45%;
+        min-width: 210px;
+        .modelCusHead{
+            height: 25px;
+            background-color: #54a7f5;
+            width: 99%;
+            border-radius: 3px 3px 0px 0px;
+            line-height: 25px;
+            padding: 5px;
+            .clcBtn{
+                float: right;
+                line-height: 25px;
+                font-size: 12px;
+                margin-top: 1px;
+                margin-right: 2px;
+                cursor: pointer;
+            }
+        }
+        .modelCusBody{
+            background: white;
+            width: 99%;
+            padding: 5px;
+            max-height: 90%;    
+        }
+        .modelCusFoot{    
+            height: 10px;
+            background-color: #e2e2e2;
+            border-radius: 0px 0px 3px 3px;
+            width: 99%;
+            padding: 5px;
+        }
+    }
+   .modal-md{
+    top: 18vh;
+    left: 24vw;
+    width: 45%;
+   }
+   .modal-lg{
+    top: 18vh !important;
+    left: 18vw !important;
+    width: 65% !important;
+   }
+   .modal-sm{
+    top: 18vh;
+    left: 37vw;
+    width: 25%;
+   }
+
+   .modalEditPopup{
+    top: 2vh !important;
+    left: 24vw !important;
+    width: 50% !important;
+    height: 92%;
+    .modelCusBody{
+        background: #dcdcdc;
+        overflow: auto;
+        height: 100%;
+    }
+   }
+
+@media screen and (max-width:767px){
+    .fadeBack{
+    .modelCus{
+        top: 58px ;
+        left: 1% ;
+        width: 97.5% ;
+    }
+    
+   .modalEditPopup{
+    top: 2vh !important;
+    left: 2vw !important;
+    width: 95% !important;
+   }
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+    .modelCus{
+    top: 18vh ;
+    left: 20vw ;
+    width: 60% ;
+    }
+    
+   .modalEditPopup{
+    top: 2vh !important;
+    left: 10vw !important;
+    width: 80% !important;
+   }
+}

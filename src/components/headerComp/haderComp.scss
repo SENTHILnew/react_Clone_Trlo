@@ -1,0 +1,184 @@
+.hederCOmp{
+    background: #026aa7;
+    width: 100%;
+    max-height: 44px;
+    min-height: 44px;
+    .list{
+        list-style: none;
+        margin: 4px;
+        padding: 0px;
+        margin-left: 5px;
+        display: inline-block;
+    .title{
+        display: inline-block;
+        margin: 1px;
+        border: 1px solid #379bfb;
+        padding: 4px;
+        margin-left: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+            &:hover{
+                background-color: #65a1da;
+            }
+        }
+    }
+    .logo-class{
+        margin-right: 6px;
+        margin-top: 3px;
+        float: right;
+        height: 38px;
+        width: 38px;
+        display: inline-block;
+        /* right: auto; */
+        /* padding-left: 16px; */
+        background: white;
+        object-fit: cover;
+        object-position: -1px -10px;
+        border-radius: 50%;
+      }
+      .hamburger {
+        font: inherit;
+        display: none;
+        overflow: visible;
+        margin: 0;
+        padding: 4px;
+        cursor: pointer;
+        transition-timing-function: linear;
+        transition-duration: .15s;
+        transition-property: opacity,filter;
+        text-transform: none;
+        color: inherit;
+        border: 0;
+        background-color: transparent;
+        padding-left: 12px;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    .hamburger-box {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 10px;
+    }
+
+    .hamburger--slider .hamburger-inner {
+        top: 2px;
+    }
+    
+    .hamburger-inner {
+        top: 50%;
+        display: block;
+        margin-top: -2px;
+
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: #fff;
+
+        &:after, &:before{
+            
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: #fff;
+
+        }
+
+        &:before{
+            top: 10px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform,opacity;
+        }
+        &:after{
+            bottom: -10px;
+        }
+    }
+    .hamburger-inner:after, .hamburger-inner:before {
+        display: block;
+        content: "";
+    }
+    .hamburger--slider.is-active .hamburger-inner {
+        transform: translate3d(0,10px,0) rotate(45deg);
+    }
+    .hamburger--slider.is-active .hamburger-inner:before {
+        transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+        opacity: 0;
+    }
+    .hamburger--slider.is-active .hamburger-inner:after {
+        transform: translate3d(0,-20px,0) rotate(-90deg);
+    }
+    .hamburger--slider .hamburger-inner:after {
+        top: 20px;
+    }
+    @media screen and (max-width:1024px){
+       .list{
+           display: none;
+       } 
+       .hamburger{
+        display: inline-block;
+       }
+    }
+}
+.backdrop{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    background: #00000063;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+
+.menuBg{
+    position: absolute;
+    top: 44px;
+    left: -1000px;
+    transition: 0.2s;
+    width: 70%;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    z-index: 1001;
+.listTp{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    .lis{
+        width: 90%;
+        border-bottom: 1px solid #0000002e;
+        padding: 10px;
+        color: #0000008a;
+        text-align: center;
+        cursor: pointer;
+    &:hover{  
+        background: #00000026;
+        color: white;
+    }
+  
+    }
+}
+
+}
+.show{
+    left:0px;
+}
+@media screen and (min-width:1025px){
+    .backdrop,.menuBg{
+        display: none;
+    } 
+ }

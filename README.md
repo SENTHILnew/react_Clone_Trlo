@@ -1,0 +1,1 @@
+This app is a trello clone with react frameworks with a bit of Redux.Only for experimental purposes.
