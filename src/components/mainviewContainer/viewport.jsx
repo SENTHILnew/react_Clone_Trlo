@@ -227,7 +227,7 @@ class viewport extends Component {
         ) : null}
         <div
           className={
-            this.props.router.location.pathname === "/"
+            this.props.router.location.pathname === "/react_Clone_Trlo"
               ? "viewPortCls mrg10"
               : "editviewCls"
           }
@@ -235,7 +235,7 @@ class viewport extends Component {
           <Routes>
             <Route
               exact
-              path="/"
+              path="/react_Clone_Trlo"
               element={
                 <Boards
                   boards={this.props.Boards}
@@ -252,7 +252,7 @@ class viewport extends Component {
               }
             />
             <Route
-              path="/board"
+              path="/react_Clone_Trlo/board"
               element={
                 <React.Fragment>
                   <Editview
@@ -328,7 +328,7 @@ class viewport extends Component {
   }
   openEditView(selected, index) {
     this.setState({ selectedBoard: selected, selectedIndex: index });
-    this.props.router.navigate("/board");
+    this.props.router.navigate(`${this.props.router.location.pathname}/board`);
   }
   changeTilte(e) {
     if (e.target.value !== "") {

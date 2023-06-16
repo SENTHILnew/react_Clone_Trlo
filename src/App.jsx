@@ -12,7 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       headers: [
-        { title: "Home", link: "/" },
+        { title: "Home", link: "/react_Clone_Trlo" },
         {
           title: "Delete Multiple",
           link: ""
