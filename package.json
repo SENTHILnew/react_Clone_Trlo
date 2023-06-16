@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "/react_Clone_Trlo",
   "eslintConfig": {
     "extends": "react-app"
   },
