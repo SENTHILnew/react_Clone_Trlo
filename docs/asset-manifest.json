@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9cbfdd3.css",
+    "main.js": "/static/js/main.bd9a6ec3.js",
+    "static/media/bg3.jpg": "/static/media/bg3.4a8a25b078ecf7bd2737.jpg",
+    "static/media/bg4.jpg": "/static/media/bg4.d6111109c6fb32f7cb2e.jpg",
+    "static/media/bg1.jpg": "/static/media/bg1.d3a4f3b7c9e59a79c1a3.jpg",
+    "static/media/bg2.jpg": "/static/media/bg2.b0533426d2abb3a9c392.jpg",
+    "static/media/cloneHelmet.png": "/static/media/cloneHelmet.b69db75c9e9fef0e6d1a.png",
+    "index.html": "/index.html",
+    "main.c9cbfdd3.css.map": "/static/css/main.c9cbfdd3.css.map",
+    "main.bd9a6ec3.js.map": "/static/js/main.bd9a6ec3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9cbfdd3.css",
+    "static/js/main.bd9a6ec3.js"
+  ]
+}

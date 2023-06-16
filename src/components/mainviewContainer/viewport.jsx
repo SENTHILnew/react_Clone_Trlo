@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, Routes, useLocation,
+  useNavigate,
+  useParams } from "react-router-dom";
 import Boards from "../boards/boards";
 import "./viewport.scss";
 import Editcardpopup from "../editPopup/editPopup";
@@ -225,16 +227,16 @@ class viewport extends Component {
         ) : null}
         <div
           className={
-            this.props.location.pathname === "/"
+            this.props.router.location.pathname === "/"
               ? "viewPortCls mrg10"
               : "editviewCls"
           }
         >
-          <Switch>
+          <Routes>
             <Route
               exact
               path="/"
-              render={props => (
+              element={
                 <Boards
                   boards={this.props.Boards}
                   changeStar={(ind, e) => {
@@ -247,11 +249,11 @@ class viewport extends Component {
                     this.openEditView(selected, index);
                   }}
                 />
-              )}
+              }
             />
             <Route
               path="/board"
-              render={props => (
+              element={
                 <React.Fragment>
                   <Editview
                     selected={this.state.selectedBoard}
@@ -282,9 +284,9 @@ class viewport extends Component {
                     }}
                   ></Editview>
                 </React.Fragment>
-              )}
+              }
             />
-          </Switch>
+          </Routes>
         </div>
       </React.Fragment>
     );
@@ -326,7 +328,7 @@ class viewport extends Component {
   }
   openEditView(selected, index) {
     this.setState({ selectedBoard: selected, selectedIndex: index });
-    this.props.history.push("/board");
+    this.props.router.navigate("/board");
   }
   changeTilte(e) {
     if (e.target.value !== "") {
@@ -586,4 +588,23 @@ const mapDispatchToProps = dispatch => {
     }
   };
 };
+
+function withRouter(ComponentInstance) {
+  function ComponentWithRouterProp(props) {
+    let location = useLocation();
+    let navigate = useNavigate();
+    let params = useParams();
+    return (
+      <ComponentInstance
+        {...props}
+        router={{ location, navigate, params }}
+      />
+    );
+  }
+
+  return ComponentWithRouterProp;
+}
+
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(viewport));
+
+
