@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_Clone_Trlo/static/css/main.c9cbfdd3.css",
-    "main.js": "/react_Clone_Trlo/static/js/main.cd4e17f7.js",
+    "main.js": "/react_Clone_Trlo/static/js/main.59558baf.js",
     "static/media/bg3.jpg": "/react_Clone_Trlo/static/media/bg3.4a8a25b078ecf7bd2737.jpg",
     "static/media/bg4.jpg": "/react_Clone_Trlo/static/media/bg4.d6111109c6fb32f7cb2e.jpg",
     "static/media/bg1.jpg": "/react_Clone_Trlo/static/media/bg1.d3a4f3b7c9e59a79c1a3.jpg",
@@ -9,10 +9,10 @@
     "static/media/cloneHelmet.png": "/react_Clone_Trlo/static/media/cloneHelmet.b69db75c9e9fef0e6d1a.png",
     "index.html": "/react_Clone_Trlo/index.html",
     "main.c9cbfdd3.css.map": "/react_Clone_Trlo/static/css/main.c9cbfdd3.css.map",
-    "main.cd4e17f7.js.map": "/react_Clone_Trlo/static/js/main.cd4e17f7.js.map"
+    "main.59558baf.js.map": "/react_Clone_Trlo/static/js/main.59558baf.js.map"
   },
   "entrypoints": [
     "static/css/main.c9cbfdd3.css",
-    "static/js/main.cd4e17f7.js"
+    "static/js/main.59558baf.js"
   ]
 }

@@ -328,7 +328,7 @@ class viewport extends Component {
   }
   openEditView(selected, index) {
     this.setState({ selectedBoard: selected, selectedIndex: index });
-    this.props.router.navigate(`${this.props.router.location.pathname !=='/'? this.props.router.location.pathname : '/react_Clone_Trlo'}/board`);
+    this.props.router.navigate(`${this.props.router.location.pathname !=='/'? this.props.router.location.pathname : '/react_Clone_Trlo'}board`);
   }
   changeTilte(e) {
     if (e.target.value !== "") {
